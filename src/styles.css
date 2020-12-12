@@ -12,6 +12,7 @@ h3 {
   margin-top: 20px;
   margin-bottom: -50px;
   font-family: "Athiti", sans-serif;
+  text-transform: lowercase;
 }
 ul {
   text-align: left;
@@ -46,11 +47,21 @@ button:hover {
     0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 15vw #e50b0b,
     0.4vw 0vw 5vw #e50b0b;
 }
-
 button:focus {
   outline: none;
 }
-
+a {
+  color: inherit;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
 .container {
   max-width: 500px;
   margin: 10px auto;
