@@ -149,3 +149,8 @@ a:active {
 .form {
   outline: none;
 }
+.git {
+  text-align: center;
+  margin-top: -10px;
+  font-family: "Athiti", sans-serif;
+}
