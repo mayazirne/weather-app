@@ -17,13 +17,8 @@ ul {
   text-align: left;
   list-style-type: none;
   position: relative;
-  top: -90px;
-  left: 255px;
-}
-hr {
-  border-top: 30px dotted #ffd8d8;
-  margin-top: -80px;
-  opacity: 70%;
+  top: -70px;
+  right: 39px
 }
 
 input[type="text"] {
@@ -102,7 +97,7 @@ button:focus {
   color: white;
   opacity: 60%;
   font-size: 120px;
-  margin-top: -50px;
+  margin-top: -30px;
   text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
     0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
     0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
@@ -115,17 +110,16 @@ button:focus {
 #description {
   text-transform: uppercase;
   font-family: neon;
-  text-align: right;
-  font-size: 32px;
+  text-align: left;
+  font-size: 38px;
   color: #ffd8d8;
   font-weight: bold;
   position: relative;
-  top: -180px;
-  right: -30px;
+  top: -130px;
 }
-
 .forecast {
   text-align: center;
+  margin-top: -50px;
 }
 .col-3 {
   font-size: 22px;
