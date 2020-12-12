@@ -31,17 +31,17 @@ input[type="text"] {
   border: none;
   border-radius: 30px;
   padding-left: 40px;
-  opacity: 60%;
+  opacity: 50%;
 }
-.button {
-  border: 0;
+button {
+  border: none;
   background: none;
   color: white;
   opacity: 60%;
   transition: all 20ms ease-in-out;
   font-size: 20px;
 }
-.button:hover {
+button:hover {
   text-shadow: 0.1vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0.1vw #ffd8d8,
     0.2vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.1vw 0vw 0vw #f25757,
     0.2vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.1vw 0vw 0.1vw #f25757,
@@ -50,8 +50,12 @@ input[type="text"] {
     0.2vw 0vw 5vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 10vw #e50b0b,
     0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 15vw #e50b0b,
     0.4vw 0vw 5vw #e50b0b;
-  cursor: pointer;
 }
+
+button:focus {
+  outline: none;
+}
+
 .container {
   max-width: 500px;
   margin: 10px auto;
@@ -135,4 +139,8 @@ input[type="text"] {
 
 #city-name {
   text-transform: uppercase;
+}
+
+.form {
+  outline: none;
 }
