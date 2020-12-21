@@ -19,7 +19,6 @@ let days = [
   "Saturday"
 ];
 
-
 function searchCity(city) {
   let apiKey = "777f2ae51fd48d180efbcfe9388ca9cb";
   let units = "metric";
@@ -33,6 +32,8 @@ function showTemperature (response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
+  document.querySelector("#main-icon").setAttribute("src",`icons/${response.data.weather[0].icon}.svg`);
+  document.querySelector("#main-icon").setAttribute("alt",`${response.data.weather[0].description}`);
 }
 
 function handleSubmit(event) {
@@ -54,7 +55,7 @@ function getCurrentLocation (event) {
 }
 
 let currentDay = days[currentTime.getDay()];
-h3.innerHTML = `${currentDay} ${hours}:${minutes}`;
+h3.innerHTML = `last updated: ${currentDay} | ${hours}:${minutes}`;
   
 let cityName = document.querySelector("#search-city");
 cityName.addEventListener("submit", handleSubmit);

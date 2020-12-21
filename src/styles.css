@@ -15,11 +15,25 @@ h3 {
   text-transform: lowercase;
 }
 ul {
-  text-align: left;
   list-style-type: none;
+  color: #ffd8d8;
+  font-size: 17px;
+  font-family: "Athiti", sans-serif;
+  text-transform: lowercase;
   position: relative;
-  top: -70px;
-  right: 39px
+  left: -40px;
+}
+
+hr {
+  border: 1px solid white;
+  box-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
+    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
+    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
 }
 
 input[type="text"] {
@@ -62,7 +76,7 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-.container {
+.container-main {
   max-width: 500px;
   margin: 10px auto;
   padding: 10px 40px;
@@ -71,6 +85,8 @@ a:active {
 }
 .icon {
   color: white;
+  font-size: 28px;
+  opacity: 60%;
 }
 #search-city {
   text-align: center;
@@ -82,6 +98,7 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: -30px;
 }
 .neon-text {
   font-family: neon;
@@ -104,11 +121,13 @@ a:active {
     inset 0 0 0.4vw 0.2vw #e97272, inset 0 0 0.5vw 0.2vw #fff7f7;
   border-radius: 1.5rem;
 }
-.main-icon {
-  color: white;
-  opacity: 60%;
-  font-size: 120px;
-  margin-top: -30px;
+#main-icon {
+  position: relative;
+  top: -190px;
+  margin-bottom: -220px;
+  filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
+  opacity: 50%;
+  width: 240px;
   text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
     0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
     0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
@@ -118,30 +137,22 @@ a:active {
     0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
     0.4vw 0vw 10vw #e50b0b;
 }
+
 #description {
   text-transform: uppercase;
   font-family: neon;
-  text-align: left;
   font-size: 38px;
   color: #ffd8d8;
   font-weight: bold;
-  position: relative;
-  top: -130px;
 }
 .forecast {
   text-align: center;
-  margin-top: -50px;
 }
 .col-3 {
   font-size: 22px;
   color: #ffd8d8;
   font-family: "Athiti", sans-serif;
 }
-.icon {
-  font-size: 28px;
-  opacity: 60%;
-}
-
 #city-name {
   text-transform: uppercase;
 }
@@ -149,8 +160,8 @@ a:active {
 .form {
   outline: none;
 }
-.git {
+.git-link {
   text-align: center;
-  margin-top: -10px;
+  margin-top: -20px;
   font-family: "Athiti", sans-serif;
 }
