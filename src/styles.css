@@ -36,6 +36,24 @@ hr {
     0.4vw 0vw 10vw #e50b0b;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffd8d8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffd8d8;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 input[type="text"] {
   background-color: white;
   border: none;
@@ -64,18 +82,7 @@ button:hover {
 button:focus {
   outline: none;
 }
-a {
-  color: inherit;
-}
-a:link {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
+
 .container-main {
   max-width: 500px;
   margin: 10px auto;
@@ -100,6 +107,17 @@ a:active {
   justify-content: center;
   margin-bottom: -30px;
 }
+
+.active {
+  color: #ffd8d8;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
 .neon-text {
   font-family: neon;
   text-align: center;
@@ -125,17 +143,10 @@ a:active {
   position: relative;
   top: -190px;
   margin-bottom: -220px;
-  filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
+  filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg)
+    brightness(94%) contrast(120%);
   opacity: 50%;
   width: 240px;
-  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
-    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
-    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
-    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
-    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
-    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b;
 }
 
 #description {

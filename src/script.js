@@ -34,6 +34,8 @@ function showTemperature (response) {
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
   document.querySelector("#main-icon").setAttribute("src",`icons/${response.data.weather[0].icon}.svg`);
   document.querySelector("#main-icon").setAttribute("alt",`${response.data.weather[0].description}`);
+
+  celciusTemperature = response.data.main.temp;
 }
 
 function handleSubmit(event) {
@@ -54,6 +56,25 @@ function getCurrentLocation (event) {
   navigator.geolocation.getCurrentPosition(searchLocation)
 }
 
+function convertToFahreinheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+}
+
+let celciusTemperature = null;
+
 let currentDay = days[currentTime.getDay()];
 h3.innerHTML = `last updated: ${currentDay} | ${hours}:${minutes}`;
   
@@ -62,5 +83,10 @@ cityName.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahreinheit);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
 
 searchCity("New York");
