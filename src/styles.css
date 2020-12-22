@@ -46,9 +46,9 @@ a:hover {
   text-decoration: none;
   color: #ffd8d8;
 }
-
 a:active {
   text-decoration: none;
+  color: #ffd8d8;
 }
 
 input[type="text"] {
