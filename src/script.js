@@ -1,5 +1,4 @@
 let currentTime = new Date();
-
 let h3 = document.querySelector("h3");
 let hours = currentTime.getHours();
 if (hours < 10) {
@@ -25,11 +24,11 @@ function formatHours(timestamp) {
   if (hours < 10) {
     hours = `0${hours}`;
 }
-let minutes = currentTime.getMinutes();
-if (minutes < 10) {
+  let minutes = currentTime.getMinutes();
+  if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-return `${hours}:${minutes}`;
+  return `${hours}:${minutes}`;
 }
 
 function displayForecast (response) {
@@ -43,11 +42,10 @@ function displayForecast (response) {
   <div class="col-3">
                 <p> ${formatHours(forecast.dt * 1000)} <br />
                 <img class="small-icon" alt="" src="icons/${forecast.weather[0].icon}.svg" /><br />
-                <span class="temp">${Math.round(forecast.main.temp)}°</span></p>
+                <strong id="temperature" class="forecast-temp">${Math.round(forecast.main.temp)}°</strong></p>
             </div>
   `;
   }
-
 }
 
 function searchCity(city) {
@@ -68,7 +66,6 @@ function showTemperature (response) {
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
   document.querySelector("#main-icon").setAttribute("src",`icons/${response.data.weather[0].icon}.svg`);
   document.querySelector("#main-icon").setAttribute("alt",`${response.data.weather[0].description}`);
-
   celciusTemperature = response.data.main.temp;
 }
 
@@ -95,22 +92,22 @@ function convertToFahreinheit(event) {
   let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celciusTemperature);
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
 }
 
 let celciusTemperature = null;
 
 let currentDay = days[currentTime.getDay()];
-h3.innerHTML = `last updated: ${currentDay} | ${hours}:${minutes}`;
+h3.innerHTML = `${currentDay} | ${hours}:${minutes}`;
   
 let cityName = document.querySelector("#search-city");
 cityName.addEventListener("submit", handleSubmit);
@@ -123,4 +120,4 @@ fahrenheitLink.addEventListener("click", convertToFahreinheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-searchCity("New York");
+searchCity("London");

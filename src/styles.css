@@ -3,14 +3,14 @@
   src: url("hellodenverdisplayregular_v1.6.ttf");
 }
 body {
-  background: black;
+  background: #060606;
 }
 h3 {
   font-size: 17px;
   text-align: center;
   color: #ffd8d8;
   margin-top: 20px;
-  margin-bottom: -50px;
+  margin-bottom: -60px;
   font-family: "Athiti", sans-serif;
   text-transform: lowercase;
 }
@@ -23,28 +23,25 @@ ul {
   position: relative;
   left: -40px;
 }
-
 hr {
-  border: 1px solid white;
-  box-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
-    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
-    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
-    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
-    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
-    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
-    0.4vw 0vw 10vw #e50b0b;
+  border: 0.3px solid white;
+  margin-bottom: 15px;
+ box-shadow: 0.1vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0.1vw #ffd8d8,
+    0.2vw 0vw 0.1vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.1vw 0vw 0vw #f25757,
+    0.2vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.1vw 0vw 0.1vw #f25757,
+    0.2vw 0vw 0.1vw #f25757, 0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #f25757,
+    0.1vw 0vw 1vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.2vw 0vw 5vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 10vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 3vw #e50b0b, 0.2vw 0vw 15vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b;
 }
-
 a:link {
   text-decoration: none;
 }
-
 a:visited {
   text-decoration: none;
   color: #ffd8d8;
 }
-
 a:hover {
   text-decoration: none;
   color: #ffd8d8;
@@ -82,22 +79,23 @@ button:hover {
 button:focus {
   outline: none;
 }
-
 .container-main {
   max-width: 500px;
   margin: 10px auto;
   padding: 10px 40px;
   background-image: url("https://media.istockphoto.com/photos/black-brick-wall-dark-background-for-design-picture-id639173848?k=6&m=639173848&s=170667a&w=0&h=XqsulkBZnsd4ANbC46bLodBSfZTblmrWonP4mKM-5so=");
   border-radius: 30px;
+  border: 6px solid black;
 }
 .small-icon {
   filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
   width: 70px;
-  opacity: 50%;
+  opacity: 60%;
 }
 #search-city {
   text-align: center;
   top: 0px;
+  margin-bottom: -10px
 }
 .wrapper {
   width: 50vm;
@@ -105,26 +103,23 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: -30px;
+  margin-bottom: -40px;
 }
-
 .active {
   color: #ffd8d8;
   text-shadow: none;
   font-weight: bold;
 }
-
 .active:hover {
   text-decoration: none;
 }
-
 .neon-text {
   font-family: neon;
   text-align: center;
   font-size: 50px;
   color: #ffd8d8;
   padding: 0 1.5rem 0 1.5rem;
-  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
     0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
     0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
     0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
@@ -142,36 +137,52 @@ button:focus {
 #main-icon {
   position: relative;
   top: -190px;
-  margin-bottom: -220px;
+  margin-bottom: -210px;
   filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
   opacity: 50%;
   width: 240px;
 }
-
 #description {
   text-transform: uppercase;
   font-family: neon;
   font-size: 38px;
   color: #ffd8d8;
   font-weight: bold;
+  opacity: 80%;
 }
 .weather-forecast {
   text-align: center;
-}
-.col-3 {
   font-size: 22px;
   color: #ffd8d8;
   font-family: "Athiti", sans-serif;
+  margin-bottom: 6px;
+  line-height: 12px;
 }
 #city-name {
   text-transform: uppercase;
 }
-
 .form {
   outline: none;
 }
-.git-link {
+.git-link:hover {
+  color: white;
+  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0.25vw #ffd8d8, 0.1vw 0vw 0vw #f25757, 0.2vw 0vw 0vw #f25757,
+    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 0.2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 0.2vw 0vw 2vw #f25757,
+    0.4vw 0vw 2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 5vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
+}
+.footer {
   text-align: center;
   margin-top: -20px;
   font-family: "Athiti", sans-serif;
+  color: #ffd8d8;
+  opacity: 70%;
+  font-size: 14px;
+}
+.forecast-temp {
+  font-size: 25px;
 }
