@@ -90,10 +90,10 @@ button:focus {
   background-image: url("https://media.istockphoto.com/photos/black-brick-wall-dark-background-for-design-picture-id639173848?k=6&m=639173848&s=170667a&w=0&h=XqsulkBZnsd4ANbC46bLodBSfZTblmrWonP4mKM-5so=");
   border-radius: 30px;
 }
-.icon {
-  color: white;
-  font-size: 28px;
-  opacity: 60%;
+.small-icon {
+  filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
+  width: 70px;
+  opacity: 50%;
 }
 #search-city {
   text-align: center;
@@ -143,8 +143,7 @@ button:focus {
   position: relative;
   top: -190px;
   margin-bottom: -220px;
-  filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg)
-    brightness(94%) contrast(120%);
+  filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
   opacity: 50%;
   width: 240px;
 }
@@ -156,7 +155,7 @@ button:focus {
   color: #ffd8d8;
   font-weight: bold;
 }
-.forecast {
+.weather-forecast {
   text-align: center;
 }
 .col-3 {
