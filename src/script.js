@@ -53,7 +53,6 @@ function searchCity(city) {
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
-
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
   axios(apiUrl).then(displayForecast);
 }
@@ -80,11 +79,14 @@ function searchLocation (position) {
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`; 
   axios.get(apiUrl).then(showTemperature);
+  let apiUrlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`; 
+  axios.get(apiUrlForecast).then(displayForecast);
+
 }
 
 function getCurrentLocation (event) {
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation)
+  navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
 function convertToFahreinheit(event) {

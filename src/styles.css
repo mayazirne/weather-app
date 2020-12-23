@@ -37,6 +37,7 @@ hr {
 }
 a:link {
   text-decoration: none;
+  color: #ffd8d8;
 }
 a:visited {
   text-decoration: none;
@@ -156,7 +157,7 @@ button:focus {
   color: #ffd8d8;
   font-family: "Athiti", sans-serif;
   margin-bottom: 6px;
-  line-height: 12px;
+  line-height: 13px;
 }
 #city-name {
   text-transform: uppercase;
