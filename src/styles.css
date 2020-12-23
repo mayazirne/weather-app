@@ -88,6 +88,7 @@ button:focus {
   border-radius: 30px;
   border: 6px solid black;
 }
+
 .small-icon {
   filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
   width: 70px;
