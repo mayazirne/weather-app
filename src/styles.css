@@ -188,3 +188,17 @@ button:focus {
 .forecast-temp {
   font-size: 25px;
 }
+
+@media (max-width: 580px) {
+  header {
+    text-align: center;
+  }
+  form {
+    display: inline;
+  }
+  .icon {
+    margin: 0, auto;
+    padding: 0px;
+  }
+}
+
