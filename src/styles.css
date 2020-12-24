@@ -193,7 +193,7 @@ button:focus {
   
   ul {
     font-size: 15px;
-    left: -80px;
+    left: -70px;
   }
   .container-main {
     width: 100%;
@@ -201,7 +201,7 @@ button:focus {
     padding-top: 20px;
   }
   .main-icon {
-    width: 180px;
+    width: 140px;
   }
   #description {
     font-size: 30px;
