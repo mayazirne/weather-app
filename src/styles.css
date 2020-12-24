@@ -138,11 +138,11 @@ button:focus {
 }
 #main-icon {
   position: relative;
-  top: -190px;
+  top: -180px;
   margin-bottom: -210px;
   filter: invert(99%) sepia(20%) saturate(2503%) hue-rotate(291deg) brightness(94%) contrast(120%);
   opacity: 50%;
-  width: 240px;
+  width: 220px;
 }
 #description {
   text-transform: uppercase;
@@ -190,11 +190,14 @@ button:focus {
 }
 
 @media (max-width: 580px) {
-  header {
-    text-align: center;
+  
+  ul {
+    left: -80px;
   }
-  form {
-    display: inline;
+  .container-main {
+    width: 100%;
+    margin: 0px, auto;
+    padding-top: 20px;
   }
   .icon {
     margin: 0, auto;
