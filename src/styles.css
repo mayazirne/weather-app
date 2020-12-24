@@ -192,6 +192,7 @@ button:focus {
 @media (max-width: 580px) {
   
   ul {
+    font-size: 15px;
     left: -80px;
   }
   .container-main {
@@ -199,9 +200,10 @@ button:focus {
     margin: 0px, auto;
     padding-top: 20px;
   }
-  .icon {
-    margin: 0, auto;
-    padding: 0px;
+  .main-icon {
+    width: 180px;
   }
+  #description {
+    font-size: 30px;
 }
-
+}
