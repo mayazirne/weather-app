@@ -202,6 +202,8 @@ button:focus {
   }
   .main-icon {
     width: 140px;
+    margin: 0, auto;
+    padding: 0px;
   }
   #description {
     font-size: 30px;
